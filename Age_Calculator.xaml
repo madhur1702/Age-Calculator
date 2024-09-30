@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgeCalculator.Age_Calculator"
+             Title="Age_Calculator">
+    <VerticalStackLayout Padding="20" Spacing="15" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Label FontSize="32" 
+               Text="Age Calculator"
+               HorizontalTextAlignment="Center" 
+               FontAttributes="Bold"
+               TextColor="#2c3e50"
+               Margin="0,25,0,0" />
+
+      
+        <DatePicker x:Name="DOB_DatePicker" 
+                    Format="dd-MM-yyyy"
+                    FontSize="18" 
+                    TextColor="#34495e"
+                    BackgroundColor="#ecf0f1"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0" />
+
+     
+        <Button Text="Calculate Your Age" 
+                x:Name="AgeCalculator_Button" 
+                Clicked="AgeCalculator_Button_Clicked" 
+                BackgroundColor="#3498db"
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="20"
+                Padding="15,10"
+                Margin="0,20,0,0"
+                WidthRequest="250" 
+                HorizontalOptions="Center" />
+
+        <Label Text="Your Age is:" 
+               FontSize="20" 
+               TextColor="#34495e"
+               HorizontalTextAlignment="Center" 
+               Margin="0,30,0,0" />
+
+        <Label x:Name="Age_Label" 
+               FontSize="26" 
+               TextColor="#e74c3c" 
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center" 
+               Margin="0,10,0,0" />
+    </VerticalStackLayout>
+</ContentPage>
